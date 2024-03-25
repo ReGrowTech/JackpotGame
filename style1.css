@@ -1,0 +1,180 @@
+body{
+    background-color: black;
+}
+.outside-container{
+    background-color: rgb(114, 1, 1);
+    padding: 40px 20px 40px 20px;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 18px;
+}
+.container{
+    display: flex;
+}
+.box1{
+    border-radius: 14px;
+    margin-top: 100px;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    margin: 0px auto;
+    overflow-y: hidden;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 28px;
+    
+}
+
+.num{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+    margin: 0;
+    font-size: 38px;
+    animation-name: number-scroll;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes number-scroll {
+    from{
+    }
+    to{
+        top: 110px;
+    }
+}
+
+.num-result{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    font-size: 38px;
+}
+
+.lights{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(19, 19, 19);
+    border-radius: 50%;
+}
+
+.red{
+    animation-name: red-light;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-delay: .1s;
+}
+@keyframes red-light {
+    from{}
+    to{
+        background-color: red;
+        box-shadow: 2px 2px 5px rgb(236, 28, 21);
+    }
+}
+
+.orange{
+    animation-name: orange-light;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-delay: .2s;
+}
+@keyframes orange-light {
+    from{}
+    to{
+        background-color: orangered;
+        box-shadow: 2px 2px 5px rgb(236, 105, 5);
+    }
+}
+
+.green{
+    animation-name: green-light;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-delay: .3s;
+}
+@keyframes green-light {
+    from{}
+    to{
+        background-color: rgb(9, 241, 9);
+        box-shadow: 2px 2px 5px yellowgreen;
+    }
+}
+
+button
+{
+    padding: 20px;
+    color: red;
+    background-color: black;
+    border-radius: 50%;
+    border: none;
+    box-shadow: -4px -2px 10px gray;
+    font-size: large;
+    font-weight: 900;
+}
+.start{
+    float: left;
+}
+
+.stop{
+    float: right;
+}
+
+button:hover
+{
+    
+    box-shadow: 2px 3px 8px  gray inset;
+}
+
+#Mytime{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#calendar{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 32px;
+}
+
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    clear: both;
+    color: white;
+}
+
+.insta{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+}
+
+.insta>div{
+    margin-top: -10px;
+    color: yellow;
+}
